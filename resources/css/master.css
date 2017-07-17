@@ -1,0 +1,17 @@
+/* Universal Styling */
+html,body {
+  color: white;
+  font-size: 18px;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+/* header styling */
+
+.logo {
+  background-color: black;
+}
+
+.logo img {
+  height: 1.5rem;
+}
