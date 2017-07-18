@@ -3,15 +3,31 @@ html,body {
   color: white;
   font-size: 18px;
   font-family: Helvetica;
-  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
 }
 
 /* header styling */
 
-.logo {
+header {
   background-color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
   height: 1.5rem;
+  margin-left: 0.5rem;
+
+}
+
+.logo span {
+  font-size: 1rem;
+  padding: 0.66rem 1rem;
 }
