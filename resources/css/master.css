@@ -5,6 +5,20 @@ html,body {
   font-family: Helvetica;
 }
 
+h1, h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+/* site container for max-width */
+
 .container {
   max-width: 960px;
   margin: auto;
@@ -31,3 +45,40 @@ header {
   font-size: 1rem;
   padding: 0.66rem 1rem;
 }
+
+/* banner styling */
+
+.banner {
+  background-image: url(../imgs/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.banner .content {
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+}
+
+.banner h1 {
+  margin-top: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end css */
