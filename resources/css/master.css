@@ -121,6 +121,29 @@ nav span {
 }
 
 
+/* info section styling */
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+#info .content {
+  width: 35%;
+}
+
+#info span {
+  display: block;
+  background-color: black;
+  width: auto;
+  padding: 1rem 2rem;
+}
+
+#info p {
+  color: black;
+}
+
 
 
 
