@@ -68,7 +68,20 @@ header {
   margin-top: 0.25rem;
 }
 
+/* navigation styling */
 
+.navigation {
+  background-color: firebrick;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav span {
+  padding: 0.75rem 0;
+}
 
 
 
