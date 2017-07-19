@@ -17,7 +17,6 @@ h5 {
   font-size: 1rem;
 }
 
-
 /* site container for max-width */
 
 .container {
@@ -35,6 +34,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  padding: 0.66rem 0;
 }
 
 .logo img {
@@ -45,7 +45,7 @@ header {
 
 .logo span {
   font-size: 1rem;
-  padding: 0.66rem 1rem;
+  padding: 0 1rem;
 }
 
 
@@ -139,6 +139,7 @@ nav {
   background-color: black;
   width: auto;
   padding: 1rem 2rem;
+  margin-bottom: 5px;
 }
 
 .info-content p {
@@ -154,18 +155,21 @@ footer {
   margin-top: 4rem;
 }
 
-/* media query for 1024 to 470 */
+/* media query for less than 1024px */
 
 @media only screen and (max-width: 1024px) {
 
-  #glasses {
-    display: none;
+  /* container styling for medium screens */
+  .container {
+    padding: 0 25px;
   }
 
-  .product {
-    width: 47%;
+  /* universal styling for medium screens */
+  h1 {
+    font-size: 1.7rem;
   }
 
+  /* nav styling for medium screens */
   .regular-nav {
     display: none;
   }
@@ -175,9 +179,90 @@ footer {
     justify-content: center;
   }
 
-  .container {
-    margin: 0 5px;
+  /* product styling for medium screens */
+  #glasses {
+    display: none;
   }
+
+  .product {
+    width: 47%;
+  }
+
+}
+
+
+/* media query for less than 470px */
+
+@media only screen and (max-width: 470px) {
+
+  /* container styling for small screen */
+  .container {
+    padding: 0;
+  }
+
+  /* logo styling for small screen */
+  .logo span {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  /* banner styling for small screen */
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .content {
+    width: 100%;
+    padding: 1.45rem 2rem;
+    top: 10rem;
+  }
+
+  .banner h5 {
+    font-size: 0.77rem;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+  }
+
+  /* product styling for small screen */
+  #products {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #glasses {
+    display: block;
+  }
+
+  .product {
+    width: 90%;
+    padding: 10px;
+  }
+
+  /* info styling for small screen */
+  #info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-content {
+    width: 90%;
+  }
+
+  .info-content p {
+    padding-bottom: 0.5rem;
+  }
+
+  /* footer styling for small screen */
+  footer {
+    text-align: center;
+  }
+
 }
 
 
