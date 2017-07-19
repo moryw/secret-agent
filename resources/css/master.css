@@ -74,17 +74,18 @@ header {
 
 /* navigation styling */
 
-.navigation {
+nav {
   background-color: firebrick;
+  padding: 0.75rem 0;
 }
 
-nav {
+.regular-nav {
   display: flex;
   justify-content: space-between;
 }
 
-nav span {
-  padding: 0.75rem 0;
+.mobile-nav {
+  display: none;
 }
 
 
@@ -129,18 +130,18 @@ nav span {
   margin-top: 3rem;
 }
 
-#info .content {
+.info-content {
   width: 35%;
 }
 
-#info span {
+.info-content span {
   display: block;
   background-color: black;
   width: auto;
   padding: 1rem 2rem;
 }
 
-#info p {
+.info-content p {
   color: black;
 }
 
@@ -153,7 +154,31 @@ footer {
   margin-top: 4rem;
 }
 
+/* media query for 1024 to 470 */
 
+@media only screen and (max-width: 1024px) {
+
+  #glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .regular-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    margin: 0 5px;
+  }
+}
 
 
 
