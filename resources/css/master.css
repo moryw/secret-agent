@@ -155,6 +155,10 @@ footer {
   margin-top: 4rem;
 }
 
+footer .mobile {
+  display: none;
+}
+
 /* media query for less than 1024px */
 
 @media only screen and (max-width: 1024px) {
@@ -262,6 +266,16 @@ footer {
   footer {
     text-align: center;
   }
+
+  footer .main {
+    display: none;
+  }
+
+  footer .mobile {
+    display: block;
+  }
+
+
 
 }
 
