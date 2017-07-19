@@ -215,7 +215,7 @@ footer {
   }
 
   .banner .content {
-    width: 100%;
+    width: auto;
     padding: 1.45rem 2rem;
     top: 10rem;
   }
